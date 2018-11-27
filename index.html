@@ -1,1 +1,66 @@
-"Hello World" 
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://storage.googleapis.com/tfjs-examples/mobilenet/dist/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <link rel="stylesheet" href="./index_files/material.cyan-teal.min.css">
+<style>
+  body {
+    margin: 20px;
+  }
+  .input-div {
+    padding: 5px;
+    font-family: monospace;
+  }
+  a {
+    color: blue;
+  }
+
+  p {
+    width: 500px;
+  }
+
+  #status {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .pred-container {
+    margin-bottom: 20px;
+  }
+  .pred-container > div {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+  }
+  .row {
+    display: table-row;
+  }
+  .cell {
+    display: table-cell;
+    padding-right: 20px;
+  }
+</style></head>
+
+
+
+<body>
+  <h3>TensorFlow.js: Using a pretrained MobileNet</h3>
+
+  <p>
+    This demo uses the pretrained MobileNet_25_224 model from Keras which you can find
+    <a href="https://github.com/fchollet/deep-learning-models/releases/download/v0.6/mobilenet_2_5_224_tf.h5">here</a>.
+
+    It is not trained to recognize human faces. For best performance, upload images of objects
+    like piano, coffee mugs, bottles, etc.
+  </p>
+
+  <div id="file-container" style="">
+    Upload an image: <input type="file" id="files" name="files[]" multiple="">
+  </div>
+
+  <div id="status">Done in 92ms</div>
+
+  <div id="predictions"><div class="pred-container"><div><img style="" id="cat" src="./index_files/cat.d8f4b943.jpg" width="224" height="224/"></div><div><div class="row"><div class="cell">Egyptian cat</div><div class="cell">0.757</div></div><div class="row"><div class="cell">tabby, tabby cat</div><div class="cell">0.076</div></div><div class="row"><div class="cell">Siamese cat, Siamese</div><div class="cell">0.058</div></div><div class="row"><div class="cell">tiger cat</div><div class="cell">0.021</div></div><div class="row"><div class="cell">lynx, catamount</div><div class="cell">0.015</div></div><div class="row"><div class="cell">Persian cat</div><div class="cell">0.015</div></div><div class="row"><div class="cell">Siberian husky</div><div class="cell">0.006</div></div><div class="row"><div class="cell">Eskimo dog, husky</div><div class="cell">0.005</div></div><div class="row"><div class="cell">wood rabbit, cottontail, cottontail rabbit</div><div class="cell">0.005</div></div><div class="row"><div class="cell">red fox, Vulpes vulpes</div><div class="cell">0.005</div></div></div></div></div>
+
+  
+
+<script src="./index_files/mobilenet.f4f7e34b.js.download"></script>
+</body></html>
